@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\demoController;
 use App\Http\Controllers\imageController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,5 @@ Route::get('/', function () {
 
 
 Route::post('/store-data',[imageController::class,'store'])->name("store");
+
+Route::get('/test',[demoController::class,'index']);

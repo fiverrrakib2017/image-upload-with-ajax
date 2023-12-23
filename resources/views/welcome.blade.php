@@ -12,6 +12,17 @@
     <title>Hello, world!</title>
   </head>
   <body>
+
+    <ul>
+        @foreach ($jsonData as $item)
+            <li>{{ $item->title }}</li>
+        @endforeach
+    </ul>
+
+
+
+
+
     <div class="container">
         <div class="row">
             <div class="col-md-6 m-auto">
